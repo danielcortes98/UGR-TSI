@@ -18,19 +18,23 @@
         :precondition (and (orien_prota ?or_prota))
         :effect 
         (and
-            (when (and (orien_prota norte))
+            (when 
+                (and (orien_prota norte))
                 (and (orien_prota este) (not (orien_prota norte)))
             )
     
-            (when (and (orien_prota este))
+            (when 
+                (and (orien_prota este))
                 (and (orien_prota sur) (not (orien_prota este)))
             )
     
-            (when (and (orien_prota sur))
+            (when 
+                (and (orien_prota sur))
                 (and (orien_prota oeste) (not (orien_prota sur)))
             )
     
-            (when (and (orien_prota oeste))
+            (when 
+                (and (orien_prota oeste))
                 (and (orien_prota norte) (not (orien_prota oeste)))
             )
         )
@@ -41,19 +45,23 @@
         :precondition (and (orien_prota ?or_prota))
         :effect 
         (and
-            (when (and (orien_prota norte))
+            (when 
+                (and (orien_prota norte))
                 (and (orien_prota oeste) (not (orien_prota norte)))
             )
     
-            (when (and (orien_prota oeste))
+            (when 
+                (and (orien_prota oeste))
                 (and (orien_prota sur) (not (orien_prota oeste)))
             )
     
-            (when (and (orien_prota sur))
+            (when 
+                (and (orien_prota sur))
                 (and (orien_prota este) (not (orien_prota sur)))
             )
     
-            (when (and (orien_prota este))
+            (when 
+                (and (orien_prota este))
                 (and (orien_prota norte) (not (orien_prota este)))
             )
         )
